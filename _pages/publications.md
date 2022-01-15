@@ -14,8 +14,8 @@ author_profile: true
 ## 2020
 ---
 
-[SSBSE'2020]
-**Evolutionary Grammar-Based Fuzzing**
+[SSBSE'2020]<br />
+**Evolutionary Grammar-Based Fuzzing**<br />
 <em><ins>Martin Eberlein</ins>, Yannic Noller, Thomas Vogel, and Lars Grunske</em><br />
 12th Symposium on Search-Based Software Engineering ([SSBSE](https://ssbse.info/)) 2020.<br />
 [[pdf](https://ssbse.info/)]  [[code](https://ssbse.info/)]  [[doi](https://ssbse.info/)]  [[bibtex](https://ssbse.info/)] <br />
