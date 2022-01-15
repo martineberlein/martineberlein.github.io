@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Education"
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,6 +8,14 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+Please contact me for my full resume/CV.
+
+
+
+# Education
+
+
 
 # Master of Science (M.Sc.), Computer Science
 ---
