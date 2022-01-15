@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Education
 # Master of Science (M.Sc.), Computer Science
 
 ---
