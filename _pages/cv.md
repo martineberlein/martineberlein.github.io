@@ -18,10 +18,7 @@ Advisor: Prof. Lars Grunske<br />
 
 # Bachelor of Science (B.Sc.), Computer Science
 ---
-2015 - 2020, **Humboldt-Universiät zu Berlin**, Germany
-
-Thesis Title: Evolutionary Grammar-Based Fuzzing
-
-Advisor: Prof. Lars Grunske
-
-[thesis]
+2015 - 2020, **Humboldt-Universiät zu Berlin**, Germany <br />
+Thesis Title: Evolutionary Grammar-Based Fuzzing<br />
+Advisor: Prof. Lars Grunske<br />
+[thesis] <br />
