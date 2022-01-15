@@ -17,7 +17,7 @@ Please contact me for my full resume/CV.
 
 
 
-## Master of Science (M.Sc.), Computer Science
+## Cand. Master of Science (M.Sc.), Computer Science
 ---
 2020 - 2022, **Humboldt-Universiät zu Berlin**, Germany <br />
 Thesis Title: Evaluating Program Behavior with different Machine Learning Approaches <br />
