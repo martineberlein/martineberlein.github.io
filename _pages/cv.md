@@ -10,10 +10,29 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+# Master of Science (M.Sc.), Computer Science
+
+---
+
+2020 - 2022, **Humboldt-Universiät zu Berlin**, Germany
+
+Thesis Title: Evaluating Program Behavior with different Machine Learning Approaches
+
+Advisor: Prof. Lars Grunske
+
+[thesis]
+
+# Bachelor of Science (B.Sc.), Computer Science
+
+---
+
+2015 - 2020, **Humboldt-Universiät zu Berlin**, Germany
+
+Thesis Title: Evolutionary Grammar-Based Fuzzing
+
+Advisor: Prof. Lars Grunske
+
+[thesis]
 
 Work experience
 ======
