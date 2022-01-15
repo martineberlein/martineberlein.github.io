@@ -11,12 +11,9 @@ redirect_from:
 
 # Master of Science (M.Sc.), Computer Science
 ---
-2020 - 2022, **Humboldt-Universiät zu Berlin**, Germany
-
-Thesis Title: Evaluating Program Behavior with different Machine Learning Approaches
-
-Advisor: Prof. Lars Grunske
-
+2020 - 2022, **Humboldt-Universiät zu Berlin**, Germany <br />
+Thesis Title: Evaluating Program Behavior with different Machine Learning Approaches <br />
+Advisor: Prof. Lars Grunske<br />
 [thesis]
 
 # Bachelor of Science (B.Sc.), Computer Science
