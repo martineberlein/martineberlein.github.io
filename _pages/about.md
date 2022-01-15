@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-Hey! This is my Website!
+Hey! I am Martin, a computer scientist and master's student at the Humboldt-Universität Zu Berlin. My research interests lie in automated software engineering focusing on software testing, vulnerability detection, and fuzzing. I am currently finishing my master thesis, which explores different machine learning approaches to determine the circumstances of a program's behavior.
