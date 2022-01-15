@@ -7,8 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-<br />
-
 ## Winter 2021/2022
 ---
 
