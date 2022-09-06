@@ -11,6 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
+
+## 2022
+---
+
+[ESEC/FSE'2022 Doctoral Symposium]<br />
+**Explaining and Debugging Pathological Program Behavior**<br />
+<em><ins>Martin Eberlein</ins></em><br />
+As part of the [Doctoral Symposium](https://2022.esec-fse.org/track/fse-2022-doctoral-symposium#About) in the Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering ([ESEC/FSE](https://2022.esec-fse.org)) 2022.<br />
+[[Pre-print](https://martineberlein.github.io/files/FSE_22_DoctoralSymposium.pdf)]  [[doi](https://doi.org/10.1145/3540250.3558910)] <br />
+
 ## 2020
 ---
 
