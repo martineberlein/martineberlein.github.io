@@ -8,7 +8,7 @@ redirect_from:
   - /projects.html
 ---
 
-_*EvoGFuzz*_
+## **EvoGFuzz**: Evolutionary Grammar-Based Fuzzing
 
 ```python
 var x = 4
