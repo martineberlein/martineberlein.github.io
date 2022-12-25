@@ -42,6 +42,17 @@ CALCULATOR: Grammar = {
 }
 ```
 
+### Try it out!
+
+You want to try EvoGFuzz out for your own examples or programs? Then, we recommend our python implementation on [GitHub]() providing an easily accessible introduction and a number of different examples and fitness functions.
+
+Further recommended resources for diving deeper into EvoGFuzz are:
+
+- EvoGFuzz’s project page contains [installation instructions]() for different scenarios.
+
+- Our [scientific paper on EvoGFuzz](), published at SSBSE'2020. The paper describes the individual steps and the idea of fitness functions more formally.
+
+
 ## Sementic Debugging
 
 > WIP
