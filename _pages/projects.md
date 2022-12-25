@@ -5,7 +5,7 @@ excerpt: "Projects"
 author_profile: true
 ---
 
-# Work in Progress (Site under Construction)
+**Watch out!** This site is under Construction {: .notice}
 
 ## **EvoGFuzz**: Evolutionary Grammar-Based Fuzzing
 
@@ -76,7 +76,3 @@ Further recommended resources for diving deeper into EvoGFuzz are:
   }
   ```
 </details>
-
-<div class="alert alert-info">
-[Tip]: To execute the Python code in the code cell below, click on the cell to select it and press <kbd>Shift</kbd> + <kbd>Enter</kbd>.
-</div>
