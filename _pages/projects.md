@@ -5,9 +5,10 @@ excerpt: "Projects"
 author_profile: true
 ---
 
-**Watch out!** This site is under Construction.{: .notice}
-
 ## **EvoGFuzz**: Evolutionary Grammar-Based Fuzzing
+
+**Watch out!** This site is under Construction.
+{: .notice}
 
 _EvoGFuzz_ is an evolutionary grammar-based fuzzing approach to optimize probabilities to generate program inputs that trigger exceptional behavior.
 With _EvoGFuzz_, it is possible to explore the program input space systematically by using evolutionary optimization with a user-definable goal.
