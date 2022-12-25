@@ -76,3 +76,7 @@ Further recommended resources for diving deeper into EvoGFuzz are:
   }
   ```
 </details>
+
+<div class="alert alert-info">
+[Tip]: To execute the Python code in the code cell below, click on the cell to select it and press <kbd>Shift</kbd> + <kbd>Enter</kbd>.
+</div>
