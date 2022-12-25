@@ -5,7 +5,7 @@ excerpt: "Projects"
 author_profile: true
 ---
 
-**Watch out!** This site is under Construction {: .notice}
+**Watch out!** This site is under Construction.{: .notice}
 
 ## **EvoGFuzz**: Evolutionary Grammar-Based Fuzzing
 
