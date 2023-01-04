@@ -54,7 +54,7 @@ The output is a list of booleans, that state whether an exception (crash) was tr
 from execution import execute_samples
 
 # Load initial input files
-sample_list = ['tan(12)', 'sqrt(-900)']
+sample_list = ['tan(12)', 'sqrt(-16)']
 
 # we call the program under test with 
 # the function "execute_samples(List[str]) -> List[bool]"
@@ -70,6 +70,25 @@ Output:
 tan(12)         False
 sqrt(-900)      True
 ```
+
+We observe that the sample sqrt(-16) triggers a bug in the calculator, whereas the sample tan(12) does not show unusual behavior.
+However, wouldn't it be great if we could find these kind of bugs automatically?
+
+```python
+from evogfuzz import EvoGFuzz
+
+evogfuzz = EvogFuzz(
+    grammar = CALCULATOR
+    initial_input = ['tan(12)', 'sqrt(-16)'],
+    evaluation_function = execute_samples
+)
+
+evogfuzz.run()
+```
+
+
+
+Now, wouldn't it be great if 
 
 
 ### Try it out!
