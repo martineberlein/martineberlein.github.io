@@ -44,9 +44,15 @@ CALCULATOR: Grammar = {
 }
 ```
 
-Now, lets load two initial input samples:
+Now, lets load two initial input samples and observe the calculator's behavior.
+To do this, we load the function execute_samples, which calls the calculator program and executes it. 
+We can call the function with a list of input samples, and it returns the corresponding execution outcome (label/oracle).
+The output is a list of booleans, that state whether an exception (crash) was triggered.
+
 
 ```python
+from execution import execute_samples
+
 # Load initial input files
 sample_list = ['tan(12)', 'sqrt(-900)']
 
@@ -58,6 +64,13 @@ oracle = execute_samples(sample_list)
 for i, row in enumerate(oracle['oracle']):
     print(sample_list[i].ljust(30) + str(row))
 ```
+
+Output:
+```python
+tan(12)         False
+sqrt(-900)      True
+```
+
 
 ### Try it out!
 
