@@ -44,7 +44,20 @@ CALCULATOR: Grammar = {
 }
 ```
 
+Now, lets load two initial input samples:
 
+```python
+# Load initial input files
+sample_list = ['tan(12)', 'sqrt(-900)']
+
+# we call the program under test with 
+# the function "execute_samples(List[str]) -> List[bool]"
+oracle = execute_samples(sample_list)
+
+# display the program output
+for i, row in enumerate(oracle['oracle']):
+    print(sample_list[i].ljust(30) + str(row))
+```
 
 ### Try it out!
 
