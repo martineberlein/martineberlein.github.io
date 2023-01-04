@@ -23,7 +23,7 @@ Furthermore, by choosing probabilities wisely, we can direct fuzzing towards spe
 Our running example is a simple calculator-subject that accepts arithmetic expressions as inputs.
 
 💡[Info]: This chapter is based on the [fuzzingbook](https://www.fuzzingbook.org) and uses their implementations of specific functions and data structures. Give it a read!
-{: .notice}
+{: .notice--info}
 
 As a first step towards using _EvoGFuzz_,  we formalize the programs input as a context free-grammar in BNF.
 ```python
