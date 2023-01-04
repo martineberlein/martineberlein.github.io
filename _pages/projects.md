@@ -20,11 +20,12 @@ Furthermore, by choosing probabilities wisely, we can direct fuzzing towards spe
 
 ### Example
 
-Our running example is a simple json-parser that accepts json inputs.
-This chapter is based on the [fuzzingbook](https://www.fuzzingbook.org) and uses their implementations of specific functions and data structures.
-Give it a read!
+Our running example is a simple calculator-subject that accepts arithmetic expressions as inputs.
 
-As a first step towards using _EvoGFuzz_,  we formalize the programs input (json-files) as a context free-grammar in BNF.
+💡[Info]: This chapter is based on the [fuzzingbook](https://www.fuzzingbook.org) and uses their implementations of specific functions and data structures. Give it a read!
+{: .notice}
+
+As a first step towards using _EvoGFuzz_,  we formalize the programs input as a context free-grammar in BNF.
 ```python
 from fuzzingbook.Grammars import Grammar
 
@@ -42,6 +43,8 @@ CALCULATOR: Grammar = {
     '<digit-1>': ['<digit>', '<digit><digit-1>']
 }
 ```
+
+
 
 ### Try it out!
 
