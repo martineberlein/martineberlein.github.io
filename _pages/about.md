@@ -21,7 +21,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
         <i>"Explaining and Debugging Pathological Program Behavior"</i>
         at
         <i>
-            <a>ESEC/FSE 2022</a>
+            <a href="https://2022.esec-fse.org">ESEC/FSE 2022</a>
         </i>
         in Singapore.
     </li>
