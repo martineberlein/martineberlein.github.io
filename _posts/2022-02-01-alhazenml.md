@@ -18,17 +18,17 @@ Parts of this notebook were a joint work with my colleague [Hoang Lam Nguyen](ht
 💡 **Coming Soon! This Site is currently under construction and is only updated periodically (i.e. when I have time :) )**
 {: .notice--warning}
 
+## Why do we need to explain program behavior?
+
 💡 [Info]: We use the functionality provided by [The Fuzzingbook](https://www.fuzzingbook.org). For a more detailed description of grammars, have a look at the chapter [Fuzzing with Grammars](https://www.fuzzingbook.org/html/Grammars.html).
 {: .notice--info}
-
-## Why do we need to explain program behavior?
 
 To illustrate Alhazen's use case and necessity, we start with a quick motivating example.
 First, let me introduce to you our program under test: **The Calculator**.
 This infamous program is similar to the one described in the original paper;
 however, we introduced a synthetic `BUG` that you have to explain utilizing the machine learning models learned by Alhazen.
 
-💡[Note] **We altered the calculator's behavior to make the bug explanation more challenging. The introduced bug by Kampmann et al. is different from ours.**
+💡[Note] We altered the calculator's behavior to make the bug explanation more challenging. The introduced bug by Kampmann et al. is different from ours.
 {: .notice--warning}
 
 Our program under test is a typical _calculator_ that accepts arithmetic equations and trigonometric functions and allows us to calculate the square root. To help us determine faulty behavior, i.e., a crash, we implemented an evaluation function that takes an input file and returns whether a bug occurred during the evaluation of the mathematical equations (`BUG`, `NO_BUG`). 
