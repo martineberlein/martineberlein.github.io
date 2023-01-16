@@ -145,3 +145,10 @@ However, this would be highly time-consuming and not an efficient debugging tech
 
 **Stay Tuned! More coming soon!**
 {: .notice--info}
+
+## Evaluation
+
+## Limitations
+
+- Heartbeat (Heartbleed)
+- Complex Semantic Relations
