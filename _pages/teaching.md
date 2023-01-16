@@ -10,7 +10,7 @@ author_profile: true
 ## Theses
 ---
 
-If you are a Humboldt Universität Zu Berlin student and have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or se-career@informatik.hu-berlin.de) **a letter of motivation and your most recent transcript of records.**
+If you are a _Humboldt-Universität Zu Berlin_ student and you have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or _se-career@informatik.hu-berlin.de_) **a letter of motivation and your most recent transcript of records.**
 
 
 ## Winter 2021/2022
