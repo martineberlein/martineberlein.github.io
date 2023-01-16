@@ -81,3 +81,62 @@ Output:
 sqrt(-16)
 tan(4)
 ```
+
+Let's execute our two input samples and observe the calculator's behavior. To do this, we load the function evaluate_samples. We can call the function with a list of input samples, and it returns the corresponding execution outcome (label/oracle).
+The output is a set of tuples (input: str, oracle: OracleResult).
+
+```python
+from typing import Set, Tuple
+# Load function execute samples
+from alhazenML.calculator import evaluate_samples
+from alhazenML.oracle import OracleResult
+
+# evaluate_samples(List[str])
+oracle: Set[Tuple[str, OracleResult]] = evaluate_samples(sample_list)
+if display_output: 
+    display(oracle)
+```
+
+This gives us the following output:
+
+```python
+{
+    ('sqrt(-16)', OracleResult.BUG),
+    ('tan(4)', OracleResult.NO_BUG)
+}
+```
+
+We observe that the sample sqrt(-16) triggers a bug in the calculator, whereas the sample tan(4) does not show unusual behavior.
+Of course, we want to know why the input sample fails the program. In a typical use case, the developers of the calculator program would now try other input samples and evaluate if similar inputs also trigger the program's failure.
+Let's try some more input samples; maybe we can refine our understanding of why the calculator crashes:
+
+```python
+# Our guesses (maybe the failure is also in the cos or tan function?)
+guess_samples = ['cos(-16)', 'tan(-16)', 'sqrt(-100)', 'sqrt(-20.23412431234123)']
+
+# lets obtain the execution outcome for each of our guess
+guess_oracle = evaluate_samples(guess_samples)
+
+# lets show the results
+if display_output:
+    display(guess_oracle)
+```
+
+Output:
+
+```python
+{
+    ('cos(-16)', OracleResult.NO_BUG),
+    ('tan(-16)', OracleResult.NO_BUG)
+    ('sqrt(-100)', OracleResult.NO_BUG),
+    ('sqrt(-20.23412431234123)', OracleResult.BUG)
+}
+```
+
+We observe that the failure only seems to occur in the _sqrt(x)_ function, however, only for specific _x_ values. We could try other values for _x_ and repeat the process.
+However, this would be highly time-consuming and not an efficient debugging technique for a larger and more complex test subject.
+
+**Wouldn't it be great if there was a tool that automatically does this for us? And this is precisely what Alhazen is used for. It helps us explain under which circumstances input files fail a program.**
+
+💡 [Info]: Alhazen is a tool that automatically learns the circumstances of program failure by associating syntactical features of sample inputs with the execution outcome. The produced explanations (in the form of a decision tree) help developers focus on the input space's relevant aspects.
+{: .notice--info}
