@@ -24,7 +24,7 @@ Parts of this notebook were a joint work with my colleague [Hoang Lam Nguyen](ht
 ## Why do we need to explain program behavior?
 
 To illustrate Alhazen's use case and necessity, we start with a quick motivating example.
-Let me introduce to you our program under test: **The Calculator**.
+First, let me introduce to you our program under test: **The Calculator**.
 This infamous program is similar to the one described in the original paper;
 however, we introduced a synthetic `BUG` that you have to explain utilizing the machine learning models learned by Alhazen.
 
@@ -61,4 +61,23 @@ CALCULATOR_GRAMMAR: Grammar = {
         ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 }
 START_SYMBOL = "<start>"
+```
+
+The `CALCULATOR_GRAMMAR` consists of several production rules, non-terminals, and terminals. Therefore, with this syntactic input format specification, the calculator only accepts inputs conforming to this grammar definition.
+
+Now, let us load two mathematical equations and test our calculator:
+
+```python
+from alhazen.helper import read_files
+
+# Load initial input files
+sample_list = read_files(['src/samples/calculator.1.expr', 'src/samples/calculator.2.expr'])
+if display_output:
+    display(sample_list)
+```
+
+Output:
+```
+sqrt(-16)
+tan(4)
 ```
