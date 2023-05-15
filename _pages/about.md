@@ -18,12 +18,8 @@ I am currently working on the project EMPEROR, which aims to automatically produ
     <h3>2023:</h3>
     <ul>
         <li>
-            <strong>May 2023</strong>
-            : Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
-             has been accepted for 
-            <i>
-                <a href="https://2023.esec-fse.org">ESEC/FSE 2023</a>
-            </i>. Pre-print will follow soon!
+            <strong>May 2023</strong>: Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
+             has been accepted for <i><a href="https://2023.esec-fse.org">ESEC/FSE 2023</a></i>. Pre-print will follow soon!
         </li>
     </ul>
 </section>
@@ -31,8 +27,10 @@ I am currently working on the project EMPEROR, which aims to automatically produ
   <h3>2022:</h3>
   <ul>
     <li>
-        <strong>November 2022</strong>
-        : I presented our paper 
+        <strong>December 2022</strong>: Returned to <a href="https://www.hu-berlin.de/en">HUB</a> after a great time at <a href="https://cispa.de/en">CISPA</a>! :)
+    </li>
+    <li>
+        <strong>November 2022</strong>: I presented our paper 
         <i>"Explaining and Debugging Pathological Program Behavior"</i>
         at
         <i>
@@ -41,8 +39,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
         in Singapore.
     </li>
     <li>
-        <strong>June 2022</strong>
-        : I moved to Saarbrücken as a visiting phd student at the 
+        <strong>June 2022</strong>: I moved to Saarbrücken as a visiting phd student at the 
         <i>
             <b>CISPA Helmholtz-Center for Information Security</b>
         </i>
@@ -50,8 +47,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
         <i>Andreas Zeller</i>.
     </li>
     <li>
-        <strong>February 2022</strong>
-        : I just started my PhD at the Humboldt-Universität zu Berlin in the research group of Lars Grunske.
+        <strong>February 2022</strong>: I just started my PhD at the Humboldt-Universität zu Berlin in the research group of Lars Grunske.
     </li>
   </ul>
 </section>
