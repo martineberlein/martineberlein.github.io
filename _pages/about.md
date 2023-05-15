@@ -16,6 +16,14 @@ I am currently working on the project EMPEROR, which aims to automatically produ
 <h2 id="things-happening">Things Happening</h2>
 <ul>
     <li>
+        <strong>May 2023</strong>
+        : Our most recent work <i>Semantic Debugging</i>> -- including our tool <strong>Avicenna</strong> --
+         has been accepted for 
+        <i>
+            <a href="https://2023.esec-fse.org">ESEC/FSE 2023</a>
+        </i>. Pre-print will follow soon!
+    </li>
+    <li>
         <strong>November 2022</strong>
         : I presented our paper 
         <i>"Explaining and Debugging Pathological Program Behavior"</i>
