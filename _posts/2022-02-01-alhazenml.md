@@ -2,6 +2,7 @@
 title: 'AlhazenML: Explaining Program Behavior'
 date: 2022-08-01
 permalink: /posts/2022/02/alhazenml/
+excerpt: "Let me explain why your program fails!"
 tags:
   - evogfuzz
   - fuzzing
