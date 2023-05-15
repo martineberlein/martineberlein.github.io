@@ -16,7 +16,7 @@ author_profile: true
 
 [ESEC/FSE'2023]<br />
 **Semantic Debugging**<br />
-<em><ins>Martin Eberlein</ins></em>, Marius Smytzek, Dominc Steinhöfel, Lars Grunske, and Andreas Zeller<br />
+<em><ins>Martin Eberlein</ins>, Marius Smytzek, Dominic Steinhöfel, Lars Grunske, and Andreas Zeller</em><br />
 In the Proceedings of the 31th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering ([ESEC/FSE](https://2023.esec-fse.org)) 2023.<br />
 [[Pre-print](https://2023.esec-fse.org)] <br />
 
