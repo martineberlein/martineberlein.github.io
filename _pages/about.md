@@ -14,15 +14,22 @@ My research interests lie in automated software engineering focusing on software
 I am currently working on the project EMPEROR, which aims to automatically produce *explanations for program behaviors - most notably, program failures*. By learning and refining predictive and generative models, we will be able to infer and refine relationships involving arbitrary input features and thus boost our understanding of how and why software behaves as it does.
 
 <h2 id="things-happening">Things Happening</h2>
-<ul>
-    <li>
-        <strong>May 2023</strong>
-        : Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
-         has been accepted for 
-        <i>
-            <a href="https://2023.esec-fse.org">ESEC/FSE 2023</a>
-        </i>. Pre-print will follow soon!
-    </li>
+<section>
+    <h3>2023:</h3>
+    <ul>
+        <li>
+            <strong>May 2023</strong>
+            : Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
+             has been accepted for 
+            <i>
+                <a href="https://2023.esec-fse.org">ESEC/FSE 2023</a>
+            </i>. Pre-print will follow soon!
+        </li>
+    </ul>
+</section>
+<section>
+  <h3>2022:</h3>
+  <ul>
     <li>
         <strong>November 2022</strong>
         : I presented our paper 
@@ -46,4 +53,5 @@ I am currently working on the project EMPEROR, which aims to automatically produ
         <strong>February 2022</strong>
         : I just started my PhD at the Humboldt-Universität zu Berlin in the research group of Lars Grunske.
     </li>
-</ul>
+  </ul>
+</section>
