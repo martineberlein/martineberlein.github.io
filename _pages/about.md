@@ -17,7 +17,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
 <ul>
     <li>
         <strong>May 2023</strong>
-        : Our most recent work <i>Semantic Debugging</i>> -- including our tool <strong>Avicenna</strong> --
+        : Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
          has been accepted for 
         <i>
             <a href="https://2023.esec-fse.org">ESEC/FSE 2023</a>
