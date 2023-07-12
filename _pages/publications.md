@@ -14,6 +14,12 @@ author_profile: true
 ## 2023
 ---
 
+[Preprint'2023]<br />
+**Tests4Py: A Benchmark for System Testing**<br />
+Marius Smytzek, <em><ins>Martin Eberlein</ins>, Batuhan Serçe, Lars Grunske, and Andreas Zeller</em><br />
+arxiv Report 2307.05147, July 2023.<br />
+[[Pre-print](https://arxiv.org/pdf/2307.05147.pdf)]  [[Repository](https://github.com/smythi93/Tests4Py)]<br />
+
 [ESEC/FSE'2023]<br />
 **Semantic Debugging**<br />
 <em><ins>Martin Eberlein</ins>, Marius Smytzek, Dominic Steinhöfel, Lars Grunske, and Andreas Zeller</em><br />
