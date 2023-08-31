@@ -24,10 +24,9 @@ I am currently working on the project EMPEROR, which aims to automatically produ
         </li>
     </ul>
     <ul>
-        <li>
-            <strong>May 2023</strong>: Our most recent work <i>Semantic Debugging</i> -- including our tool <strong>Avicenna</strong> --
-             has been accepted for <i><a href="https://2023.esec-fse.org">ESEC/FSE 2023</a></i>. Pre-print will follow soon!
-        </li>
+    <li>
+        <strong>May 2023</strong>: Our latest paper, <i>Semantic Debugging</i>, along with our tool <strong>Avicenna</strong>, has been accepted for presentation at <i><a href="https://2023.esec-fse.org">ESEC/FSE 2023</a></i>. Check out our <a href="https://martineberlein.github.io/files/fse2023-semantic-debugging.pdf">Preprint</a> and explore our <a href="https://github.com/martineberlein/avicenna">GitHub Repository</a> for Avicenna!
+    </li>
     </ul>
 </section>
 <section>
