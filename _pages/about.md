@@ -18,6 +18,11 @@ I am currently working on the project EMPEROR, which aims to automatically produ
     <h3>2023:</h3>
     <ul>
         <li>
+            <strong>December 2023</strong>: I'll be presenting <i>Avicenna</i> at <i><a href="https://2023.esec-fse.org">ESEC/FSE 2023</a></i> in San Francisco. Join me there for engaging discussions!
+        </li>
+    </ul>
+    <ul>
+        <li>
             <strong>July 2023</strong>: We have published our innovative benchmark, <i>Tests4Py</i>, on <a href="https://arxiv.org/pdf/2307.05147.pdf">arXiv</a>.
             You can also explore our tool on <a href="https://github.com/smythi93/Tests4Py">GitHub</a>.
             If you have any suggestions or additions for our benchmark, please provide us with your feedback. We are more than happy to continually improve and extend our benchmark!
