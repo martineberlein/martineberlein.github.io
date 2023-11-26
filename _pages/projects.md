@@ -87,10 +87,6 @@ evogfuzz.run()
 ```
 
 
-
-Now, wouldn't it be great if 
-
-
 ### Try it out!
 
 You want to try EvoGFuzz out for your own examples or programs? Then, we recommend our python implementation on [GitHub]() providing an easily accessible introduction and a number of different examples and fitness functions.
