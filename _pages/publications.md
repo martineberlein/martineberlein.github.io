@@ -18,13 +18,13 @@ author_profile: true
 **Tests4Py: A Benchmark for System Testing**<br />
 Marius Smytzek, <em><ins>Martin Eberlein</ins>, Batuhan Serçe, Lars Grunske, and Andreas Zeller</em><br />
 arxiv Report 2307.05147, July 2023.<br />
-[[Pre-print](https://arxiv.org/pdf/2307.05147.pdf)]  [[Repository](https://github.com/smythi93/Tests4Py)]<br />
+[[PDF](https://arxiv.org/pdf/2307.05147.pdf)]  [[Repository](https://github.com/smythi93/Tests4Py)]<br />
 
 [ESEC/FSE'2023]<br />
 **Semantic Debugging**<br />
 <em><ins>Martin Eberlein</ins>, Marius Smytzek, Dominic Steinhöfel, Lars Grunske, and Andreas Zeller</em><br />
 In the Proceedings of the 31th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering ([ESEC/FSE](https://2023.esec-fse.org)) 2023.<br />
-[[Pre-print](https://martineberlein.github.io/files/fse2023-semantic-debugging.pdf)]  [[Repository](https://github.com/martineberlein/avicenna)]<br />
+[[PDF](https://martineberlein.github.io/files/fse23main-p446-p-1030250979-72424-final.pdf)]  [[Repository](https://github.com/martineberlein/avicenna)]  [[HTML](https://dl.acm.org/doi/10.1145/3611643.3616296)] <br />
 
 ## 2022
 ---
