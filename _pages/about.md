@@ -18,7 +18,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
     <h3>2024</h3>
     <ul>
         <li>
-            <strong>February 2024</strong>: I'll be presenting our paper, <a href="https://dl.acm.org/doi/10.1145/3611643.3616296">Semantic Debugging</a>, and demonstrating <a href="https://github.com/martineberlein/avicenna">Avicenna</a> at SE 2024 in Linz.
+            <strong>February 2024</strong>: I'll be presenting our paper, <a href="https://dl.acm.org/doi/10.1145/3611643.3616296">Semantic Debugging</a>, and demonstrating <a href="https://github.com/martineberlein/avicenna">Avicenna</a> at SE 2024 in Linz, Austria.
         </li>
         <li>
             <strong>January 2024</strong>: Began the year collaborating with Andreas Zeller's research group at Schloss Dagstuhl, focusing on the Semantics of Software Systems.
