@@ -33,10 +33,19 @@ If you are a computer science student at _Humboldt-Universität Zu Berlin_ and y
 <em><ins>Tobias Kiecker</ins></em><br />
 
 
+## Summer 2023
+---
+
+[Project]<br />
+**Machine Learning for Debugging**<br />
+<em>Semester Project, Summer 2023, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
+[[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ss2023/sp_mlmgd/sp_assv)]<br />
+
+
 ## Winter 2021/2022
 ---
 
-[2021/2022]<br />
+[Seminar]<br />
 **Automated Software Engineering**<br />
 <em>Seminar, Winter 2021, Master Studies, Humboldt-Universität zu Berlin</em><br />
 [[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ws2021/ase)]<br />
