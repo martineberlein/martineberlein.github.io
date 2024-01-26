@@ -17,7 +17,7 @@ If you are a computer science student at _Humboldt-Universität Zu Berlin_ and y
 
 [Master]<br />
 **Exploring Explanation Strategies: A User Study on Automated Debugging Tools**<br />
-<em><ins>Christopher Lazik</ins></em><br />
+<em><ins>Christopher Lazik</ins> - (now: PhD Student @ Humboldt-Universität zu Berlin)</em><br />
 
 [Master]<br />
 **Explaining Mispredictions of Machine Learning Models with Influential Input Features**<br />
@@ -30,7 +30,8 @@ If you are a computer science student at _Humboldt-Universität Zu Berlin_ and y
 
 [Bachelor]<br />
 **Explaining Pathological Behaviour of Self-Adaptive Systems**<br />
-<em><ins>Tobias Kiecker</ins></em><br />
+<em><ins>Tobias Kiecker</ins> - (now: PhD Student @ Humboldt-Universität zu Berlin)</em><br />
+
 
 
 ## Summer 2023
