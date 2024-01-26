@@ -13,7 +13,11 @@ author_profile: true
 If you are a computer science student at _Humboldt-Universität Zu Berlin_ and you have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or _se-career@informatik.hu-berlin.de_) **a letter of motivation and your most recent transcript of records.**
 
 ### Supervised Theses
----
+--- 
+
+[Master]<br />
+**Exploring Explanation Strategies: A User Study on Automated Debugging Tools**<br />
+<em><ins>Christopher Lazik</ins></em><br />
 
 [Master]<br />
 **Explaining Mispredictions of Machine Learning Models with Influential Input Features**<br />
