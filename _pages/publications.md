@@ -11,6 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
+## 2024
+---
+
+[SE'2024]<br />
+**Semantic Debugging**<br />
+<em><ins>Martin Eberlein</ins>, Marius Smytzek, Dominic Steinhöfel, Lars Grunske, and Andreas Zeller</em><br />
+Software Engineering 2024 (SE 2024).<br />
+[[PDF](https://martineberlein.github.io/files/se2024-semantic-debugging.pdf)]  [[Proceedings](https://dl.gi.de/handle/20.500.12116/43550)]<br />
+
+
 ## 2023
 ---
 
