@@ -14,22 +14,22 @@ author_profile: true
 ## 2024
 ---
 
+[FSE'2024]<br />
+**Tests4Py: A Benchmark for System Testing**<br />
+Marius Smytzek, <em><ins>Martin Eberlein</ins>, Batuhan Serçe, Lars Grunske, and Andreas Zeller</em><br />
+In the Proceedings of the 32th ACM International Conference on the Foundations of Software Engineering (FSE).<br />
+[[PDF](https://martineberlein.github.io/files/fse2024-tests4py.pdf)]  [[Repository](https://github.com/smythi93/Tests4Py)]<br />
+
 [SE'2024]<br />
 **Semantic Debugging**<br />
 <em><ins>Martin Eberlein</ins>, Marius Smytzek, Dominic Steinhöfel, Lars Grunske, and Andreas Zeller</em><br />
 Software Engineering 2024 (SE 2024).<br />
-<em>For the full conference paper, please refer to the ESEC/FSE 2023 article.</em><br/>,
+<em>For the full conference paper, please refer to the ESEC/FSE 2023 article.</em><br/>
 [[PDF](https://martineberlein.github.io/files/se2024-semantic-debugging.pdf)]  [[Proceedings](https://dl.gi.de/handle/20.500.12116/43550)]<br />
 
 
 ## 2023
 ---
-
-[Preprint'2023]<br />
-**Tests4Py: A Benchmark for System Testing**<br />
-Marius Smytzek, <em><ins>Martin Eberlein</ins>, Batuhan Serçe, Lars Grunske, and Andreas Zeller</em><br />
-arXiv Report 2307.05147, July 2023.<br />
-[[PDF](https://arxiv.org/pdf/2307.05147.pdf)]  [[Repository](https://github.com/smythi93/Tests4Py)]<br />
 
 [ESEC/FSE'2023]<br />
 **Semantic Debugging**<br />
