@@ -10,7 +10,10 @@ author_profile: true
 ## Theses
 ---
 
-If you are a computer science student at _Humboldt-Universität Zu Berlin_ and you have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or _se-career@informatik.hu-berlin.de_) **a letter of motivation and your most recent transcript of records.**
+If you are a computer science student at _Humboldt-Universität Zu Berlin_ and you have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or _career-se.informatik@lists.hu-berlin.de_) **a letter of motivation and your most recent transcript of records.**
+
+💡 **Please note** that due to an update to our mailing server, the new email address for SE career-related inquiries is now **career-se.informatik@lists.hu-berlin.de**!
+{: .notice--warning}
 
 ### Supervised Theses
 --- 
