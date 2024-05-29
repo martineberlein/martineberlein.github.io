@@ -18,6 +18,9 @@ I am currently working on the project EMPEROR, which aims to automatically produ
     <h3>2024</h3>
     <ul>
         <li>
+            <strong>May 2024</strong>: I co-founded InputLab, a startup that generates test data for various formats, from electronic invoices to communication between government authorities, covering all input features. We secured <strong>€800k in initial funding</strong> from the German Federal Ministry of Education and Research! Visit us at <a href="https://inputlab.net">inputlab.net</a>.
+        </li>
+        <li>
             <strong>April 2024</strong>: Our Benchmark Tests4Py has been accepted for presentation at <a href="https://2024.esec-fse.org">FSE 2024</a> in Brazil! Tests4Py is open-source and available on <a href="https://github.com/smythi93/Tests4Py">GitHub</a>. Don't forget to check out our <a href="https://martineberlein.github.io/files/fse2024-tests4py.pdf">detailed paper</a> as well!
         </li>
         <li>
