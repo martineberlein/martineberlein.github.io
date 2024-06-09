@@ -11,6 +11,12 @@ redirect_from:
 
 Please contact me for my full resume/CV.
 
+## [Dr. rer. nat.](https://en.wikipedia.org/wiki/Dr._rer._nat.) (PhD), Computer Science
+---
+2022 - today, **Humboldt-Universiät zu Berlin**, Germany <br />
+Thesis Title: Understandind and Debugging Pathological Program Behavior <br />
+Advisor: Prof. Lars Grunske<br />
+
 ## Master of Science (M.Sc.), Computer Science
 ---
 2020 - 2022, **Humboldt-Universiät zu Berlin**, Germany <br />
