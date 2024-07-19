@@ -57,7 +57,7 @@ If you are a computer science student at _Humboldt-Universität Zu Berlin_ and y
 
 [Guest Lecture & Exercise]<br/>
 **Software Engineering II**<br/>
-<em>Lecture, Summer 2024, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
+<em>Lecture, Summer 2023, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
 **Lecture:** <em>Grammar Based Fuzzing + Explanation of Bugs I & II</em><br/>
 [[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ss2023/se2)]<br />
 
