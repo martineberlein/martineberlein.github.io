@@ -14,6 +14,12 @@ author_profile: true
 ## 2024
 ---
 
+[ASE'2024]<br />
+**FixKit: A Program Repair Collection for Python**<br />
+Marius Smytzek, <em><ins>Martin Eberlein</ins>, Kai Werk, Lars Grunske, and Andreas Zeller</em><br />
+In the Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering (ASE 2024).<br />
+[[PDF](https://martineberlein.github.io/files/ase24-fixkit.pdf)]  [[Repository](https://github.com/smythi93/fixkit)]<br />
+
 [FSE'2024]<br />
 **Tests4Py: A Benchmark for System Testing**<br />
 Marius Smytzek, <em><ins>Martin Eberlein</ins>, Batuhan Serçe, Lars Grunske, and Andreas Zeller</em><br />
