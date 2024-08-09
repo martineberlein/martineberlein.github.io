@@ -18,7 +18,10 @@ I am currently working on the project EMPEROR, which aims to automatically produ
     <h3>2024</h3>
     <ul>
         <li>
-            <strong>August 2024</strong>: I am honored to have been awarded the prestigious <strong>Black Shirt</strong> by my research group at Humboldt-Universität Berlin for my contributions to the field of software engineering! The <a href="https://en.wikipedia.org/wiki/Blackshirts_(American_football)">Blackshirt</a> tradition originates from the Nebraska University Football Team, where it is given to exceptional defense players for outstanding performances.
+             <strong>August 2024</strong>: Our Tool FixKit has been accepted at <a href="https://conf.researchr.org/home/ase-2024">ASE 2024</a>. FixKit is a comprehensive collection of program repair approaches for Python, allowing researchers to easily compare and explore different repair methods on a unified set of techniques. Be sure to check out our <a href="https://martineberlein.github.io/files/ase2024-fixkit.pdf">pre-print</a>!
+        </li>
+        <li>
+            <strong>July 2024</strong>: I am honored to have been awarded the prestigious <strong>Black Shirt</strong> by my research group at Humboldt-Universität Berlin for my contributions to the field of software engineering! The <a href="https://en.wikipedia.org/wiki/Blackshirts_(American_football)">Blackshirt</a> tradition originates from the Nebraska University Football Team, where it is given to exceptional defense players for outstanding performances.
         </li>
         <li>
             <strong>May 2024</strong>: I co-founded <strong>InputLab</strong>, a startup that generates test data for various formats, from electronic invoices to communication between government authorities, covering all input features. We secured <strong>€800k in initial funding</strong> from the German Federal Ministry of Education and Research! Visit us at <a href="https://cispa.de/en/inputlab">inputlab.net</a>.
