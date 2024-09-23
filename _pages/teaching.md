@@ -15,6 +15,25 @@ If you are a computer science student at _Humboldt-Universität Zu Berlin_ and y
 💡 **Please note** that due to an update to our mailing server, the new email address for SE career-related inquiries is now **career-se.informatik@lists.hu-berlin.de**!
 {: .notice--warning}
 
+### Ongoing Theses
+--- 
+
+[Bachelor]<br />
+**Enhancing Automated Program Repair with Additional Test Case Generation**<br />
+<em><ins>Marwin Linke</ins></em><br />
+
+[Bachelor]<br />
+**Is Automatic Program Repair in Python possible? - Evaluating Automatic Program Repair Approaches**<br />
+<em><ins>Kai Werk</ins></em><br />
+
+[Bachelor]<br />
+**When Does This Line Get Triggered? Explainable Line Reachability Using Semantic Constraints**<br />
+<em><ins>Angelina Teodoridis</ins></em><br />
+
+[Master]<br />
+**Identifying Distinctive Program Inputs in High Dimensional Mixed-Feature Spaces**<br />
+<em><ins>Konstantin Böttcher</ins></em><br />
+
 ### Supervised Theses
 --- 
 
