@@ -15,7 +15,7 @@ I am currently working on the project EMPEROR, which aims to automatically produ
 In particular, I am working in the following areas:
 
 - **Test Case Generation**: Systematically generating test inputs that expose pathological program behavior [[SSBSE'20](https://martineberlein.github.io/files/ssbse2020_eberlein_evogfuzz_preprint.pdf), [FSE'22](https://martineberlein.github.io/files/FSE_22_DoctoralSymposium.pdf)].
-- **Explaining Pathological Program Behavior**: Producing debugging diagnoses that explain the causes of pathological program behavior [[FSE'23]](https://martineberlein.github.io/files/fse23main-p446-p-1030250979-72424-final.pdf).
+- **Explaining Pathological Program Behavior**: Producing debugging diagnoses that explain the causes of pathological program behavior [[FSE'23](https://martineberlein.github.io/files/fse23main-p446-p-1030250979-72424-final.pdf)].
 - **Automatic Program Repair**: Automatically generating repairs to fix incorrect program behavior [[ASE'24](https://martineberlein.github.io/files/ase24-fixkit.pdf)].
 
 <h2 id="things-happening">Things Happening</h2>
