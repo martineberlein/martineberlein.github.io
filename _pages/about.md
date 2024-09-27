@@ -12,6 +12,11 @@ Hey, I am Martin, a computer scientist, research assistant, and Ph.D. candidate 
 My research interests lie in automated software engineering focusing on software testing, vulnerability detection, and *fuzzing*.
 
 I am currently working on the project EMPEROR, which aims to automatically produce *explanations for program behaviors - most notably, program failures*. By learning and refining predictive and generative models, we will be able to infer and refine relationships involving arbitrary input features and thus boost our understanding of how and why software behaves as it does.
+In particular, I am working in the following areas:
+
+- **Test Case Generation**: Systematically generating test inputs that expose pathological program behavior [SSBSE'20, FSE'22].
+- **Explaining Pathological Program Behavior**: Producing debugging diagnoses that explain the causes of pathological program behavior [FSE'23].
+- **Automatic Program Repair**: Automatically generating repairs to fix incorrect program behavior [ASE'24].
 
 <h2 id="things-happening">Things Happening</h2>
 <section>
