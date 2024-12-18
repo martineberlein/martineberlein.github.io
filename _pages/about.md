@@ -23,6 +23,9 @@ In particular, I am working in the following areas:
     <h3>2024</h3>
     <ul>
         <li>
+             <strong>Dezember 2024</strong>: Our paper <i>"Which Inputs trigger my Patch?"</i> has been accapted at the APR'2025! Pre-Print will follow soon!
+        </li>
+        <li>
              <strong>August 2024</strong>: Our Tool FixKit has been accepted at <a href="https://conf.researchr.org/home/ase-2024">ASE 2024</a>. <a href="https://github.com/smythi93/fixkit">FixKit</a> is a comprehensive collection of program repair approaches for Python, allowing researchers to easily compare and explore different repair methods on a unified set of techniques. Be sure to check out our <a href="https://martineberlein.github.io/files/ase24-fixkit.pdf">pre-print</a>!
         </li>
         <li>
