@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>a post with code | Martin  Eberlein</title>
+    <title>a post with github metadata | Martin  Eberlein</title>
     <meta name="author" content="Martin  Eberlein">
-    <meta name="description" content="an example of a blog post with some code">
+    <meta name="description" content="a quick run down on accessing github metadata.">
     <meta name="keywords" content="automated-program-repair, fault-localization, automated-debugging, testing, software-engineering, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%AD%90%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://martineberlein.github.io/org_posts/2015-07-15-code/">
+    <link rel="canonical" href="https://martineberlein.github.io/org_posts/2020-09-28-github-metadata.html">
 
     <!-- Dark Mode -->
     
@@ -76,10 +76,6 @@
                 <a class="nav-link" href="/">about</a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -124,17 +120,13 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">a post with code</h1>
-    <p class="post-meta">July 15, 2015</p>
+    <h1 class="post-title">a post with github metadata</h1>
+    <p class="post-meta">September 28, 2020</p>
     <p class="post-tags">
-      <a href="/blog/2015"> <i class="fas fa-calendar fa-sm"></i> 2015 </a>
+      <a href="/blog/2020"> <i class="fas fa-calendar fa-sm"></i> 2020 </a>
         ·  
-        <a href="/blog/tag/formatting-code">
-          <i class="fas fa-hashtag fa-sm"></i> formatting code</a>  
-          
-        ·  
-        <a href="/blog/category/sample-posts">
-          <i class="fas fa-tag fa-sm"></i> sample-posts</a>  
+        <a href="/blog/category/sample-posts-external-services">
+          <i class="fas fa-tag fa-sm"></i> sample-posts external-services</a>  
           
 
     </p>
@@ -143,88 +135,45 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
-It supports more than 100 languages.
-This example is in C++.
-All you have to do is wrap your code in markdown code tags:</p>
+      <p>A sample blog page that demonstrates the accessing of github meta data.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">c++
-</span><span class="n">code</span> <span class="n">code</span> <span class="n">code</span>
-<span class="p">```</span>
-</code></pre></div></div>
+<h2 id="what-does-github-metadata-do">What does Github-MetaData do?</h2>
+<ul>
+  <li>Propagates the site.github namespace with repository metadata</li>
+  <li>Setting site variables :
+    <ul>
+      <li>site.title</li>
+      <li>site.description</li>
+      <li>site.url</li>
+      <li>site.baseurl</li>
+    </ul>
+  </li>
+  <li>Accessing the metadata - duh.</li>
+  <li>Generating edittable links.</li>
+</ul>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+  <li>If you’re recieving incorrect/missing data, you may need to perform a Github API<a href="https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md" rel="external nofollow noopener" target="_blank"> authentication</a>.</li>
+  <li>Go through this <a href="https://jekyll.github.io/github-metadata/" rel="external nofollow noopener" target="_blank">README</a> for more details on the topic.</li>
+  <li>
+<a href="https://github.com/jekyll/github-metadata/blob/master/docs/site.github.md" rel="external nofollow noopener" target="_blank">This page</a> highlights all the feilds you can access with github-metadata.
+<br>
+</li>
+</ul>
 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>By default, it does not display line numbers. If you want to display line numbers for every code block, you can set <code class="language-plaintext highlighter-rouge">kramdown.syntax_highlighter_opts.block.line_numbers</code> to true in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p>
-
-<p>If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:</p>
-
-<p>{% highlight c++ linenos %}  <br> code code code <br> {% endhighlight %}</p>
-
-<p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers.
-Produces something like this:</p>
-
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr>
-<td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-</pre></td>
-<td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
-
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></td>
-</tr></tbody></table></code></pre></figure>
+<h2 id="example-metadata">Example MetaData</h2>
+<ul>
+  <li>Host Name :</li>
+  <li>URL :</li>
+  <li>BaseURL :</li>
+  <li>Archived :</li>
+  <li>Contributors :</li>
+</ul>
 
 
     </div>
   </article>
-
-
 </div>
 
       

@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>a post with custom blockquotes | Martin  Eberlein</title>
+    <title>[ICSE 2023] Exploring LLM-based General Bug Reproduction | Martin  Eberlein</title>
     <meta name="author" content="Martin  Eberlein">
-    <meta name="description" content="an example of a blog post with custom blockquotes">
+    <meta name="description" content="An explanation of my ICSE'23 work, and perspective one year after submitting the paper">
     <meta name="keywords" content="automated-program-repair, fault-localization, automated-debugging, testing, software-engineering, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%AD%90%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://martineberlein.github.io/org_posts/2023-05-12-custom-blockquotes/">
+    <link rel="canonical" href="https://martineberlein.github.io/academia/llm/test_generation/2023/08/27/libro-explained.html">
 
     <!-- Dark Mode -->
     
@@ -76,10 +76,6 @@
                 <a class="nav-link" href="/">about</a>
               </li>
               
-              <!-- Blog -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/blog/">blog</a>
-              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -124,13 +120,17 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">a post with custom blockquotes</h1>
-    <p class="post-meta">May 12, 2023</p>
+    <h1 class="post-title">[ICSE 2023] Exploring LLM-based General Bug Reproduction</h1>
+    <p class="post-meta">August 27, 2023</p>
     <p class="post-tags">
       <a href="/blog/2023"> <i class="fas fa-calendar fa-sm"></i> 2023 </a>
         ·  
-        <a href="/blog/category/sample-posts-blockquotes">
-          <i class="fas fa-tag fa-sm"></i> sample-posts blockquotes</a>  
+        <a href="/blog/category/academia">
+          <i class="fas fa-tag fa-sm"></i> academia</a>  
+          <a href="/blog/category/llm">
+          <i class="fas fa-tag fa-sm"></i> LLM</a>  
+          <a href="/blog/category/test-generation">
+          <i class="fas fa-tag fa-sm"></i> test_generation</a>  
           
 
     </p>
@@ -139,113 +139,53 @@
   <article class="post-content">
     
     <div id="markdown-content">
-      <p>This post shows how to add custom styles for blockquotes. Based on <a href="https://github.com/sighingnow/jekyll-gitbook" rel="external nofollow noopener" target="_blank">jekyll-gitbook</a> implementation.</p>
+      <p>(Associated files, such as the bibtex or slides, can be found <a href="/al-folio/publications/#Kang2023aa">here</a>.)</p>
 
-<p>We decided to support the same custom blockquotes as in <a href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html" rel="external nofollow noopener" target="_blank">jekyll-gitbook</a>, which are also found in a lot of other sites’ styles. The styles definitions can be found on the <a href="https://github.com/alshedivat/al-folio/blob/master/_sass/_base.scss" rel="external nofollow noopener" target="_blank">_base.scss</a> file, more specifically:</p>
+<p>TLDR: This paper introduces <code class="language-plaintext highlighter-rouge">LIBRO</code>, a technique that automatically reproduces bug reports with high precision.</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Tips, warnings, and dangers */</span>
-<span class="nc">.post</span> <span class="nc">.post-content</span> <span class="nt">blockquote</span> <span class="p">{</span>
-    <span class="k">&amp;</span><span class="nc">.block-tip</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-bg</span><span class="p">);</span>
+<h2 id="motivation">Motivation</h2>
 
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
+<p>When users or developers find bugs, they can report these bugs on issue tracker software, such as on GitHub as issues or on Jira. Such reports are called “bug reports”. Bug reports are generally written in natural language, and may be submitted without a <strong>test</strong> that reproduces the issue. This is a difficult situation for developers, as they will then have to manually try to reproduce the issue in the bug report by writing their own test code. Given the large volume of bug reports being submitted every day, this burden can be overwhelming. Thus, bug reproduction is a situation where automatic test generation could help developers.</p>
 
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-tip-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="k">&amp;</span><span class="nc">.block-warning</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-warning-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="k">&amp;</span><span class="nc">.block-danger</span> <span class="p">{</span>
-    <span class="nl">border-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block</span><span class="p">);</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-bg</span><span class="p">);</span>
-
-    <span class="nt">p</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-text</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span>
-      <span class="nl">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">global-danger-block-title</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>A regular blockquote can be used as following:</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a regular blockquote</span>
-<span class="gt">&gt; and it can be used as usual</span>
-</code></pre></div></div>
+<p>Despite this, due to the difficulty of natural language processing, automatic bug reproduction has been mainly limited to crash bugs, where the expected behavior is clear - the program should not crash. This actually leaves some simple cases (from the human perspective) difficult to automatically handle for machines. For example, consider the following <a href="https://issues.apache.org/jira/browse/MATH-370" rel="external nofollow noopener" target="_blank">bug report</a> from Commons Math:</p>
 
 <blockquote>
-  <p>This is a regular blockquote
-and it can be used as usual</p>
+  <p><strong>NaN in “equals” methods</strong></p>
+
+  <p>In “MathUtils”, some “equals” methods will return true if both argument are NaN.
+Unless I’m mistaken, this contradicts the IEEE standard.</p>
+
+  <p>If nobody objects, I’m going to make the changes.</p>
 </blockquote>
 
-<p>These custom styles can be used by adding the specific class to the blockquote, as follows:</p>
+<p>In this case, it is clear what the expected behavior is to a human (<code class="language-plaintext highlighter-rouge">equals</code> methods should return false if both arguments are NaN). However, when trying to deal with this report using a rule-based algorithm, you immediately face two difficulties. First, the report does not explicitly spell out the expected behavior, so it is difficult to extract the expected behavior. Second, even if you get the oracle, all the code references in the report are disconnected, so it can be difficult to automatically write a test based on the available information. It is likely such difficulties that made automatic bug reproduction outside of crash bugs difficult.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; A tip can be used when you want to give advice</span>
-<span class="gt">&gt; related to a certain content.</span>
-{: .block-tip }
-</code></pre></div></div>
+<h2 id="approach-and-results">Approach and Results</h2>
 
-<blockquote class="block-tip">
-  <h5 id="tip">TIP</h5>
+<p>It is no longer news, but one of the observations of our paper is that large language models (LLMs) do quite a good job of overcoming these challenges. After all, LLMs are good enough at natural language processing to the extent that they are capable of <a href="https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html" rel="external nofollow noopener" target="_blank">explaining humor</a>, and they are capable of generating code as well. Consequently, they are a natural solution to the test reproduction problem.</p>
 
-  <p>A tip can be used when you want to give advice
-related to a certain content.</p>
-</blockquote>
+<p>However, to build a tool that is actually useful to developers, simply generating many solutions from an LLM is not enough - we can’t hand a hundred candidate reproducing tests to a developer and say “job done”. Thankfully, for automatic bug reproduction, we find features that can help reduce this manual inspection cost. For example, a bug reproducing test should actually fail on the current, buggy version of the code, which allows us to automatically filter a portion of the unhelpful solutions. We bundled this heuristic, along with others, as an automated post-processing pipeline, specialized for handling bug reproduction.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a warning, and thus should</span>
-<span class="gt">&gt; be used when you want to warn the user</span>
-{: .block-warning }
-</code></pre></div></div>
+<p>With LLMs and the post-processing, which together we group in the tool <code class="language-plaintext highlighter-rouge">LIBRO</code>, we could both reproduce <strong>one-third</strong> of all of the bugs in the Defects4J benchmark, which is a substantially better performance than the baselines that we compared against. Furthermore, with the postprocessing pipeline we could achieve a precision of up to 0.85, reducing developer hassle with false positives.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></p>
 
-<blockquote class="block-warning">
-  <h5 id="warning">WARNING</h5>
+<h2 id="perspective-a-year-after-submitting-the-paper">Perspective A Year After Submitting The Paper</h2>
 
-  <p>This is a warning, and thus should
-be used when you want to warn the user</p>
-</blockquote>
+<p>Since then, there has been a substantial amount of work on test generation using large language models. Testing does seem to be one of the most natural applications of LLMs for software engineering - while LLMs have the tendency to be wrong, it is okay for tests to be “wrong”, as this may actually lead to the testing of interesting behavior, as we note in <a href="https://arxiv.org/abs/2306.05152" rel="external nofollow noopener" target="_blank">Robert et al.</a>.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
-<span class="gt">&gt;</span>
-<span class="gt">&gt; This is a danger zone, and thus should</span>
-<span class="gt">&gt; be used carefully</span>
-{: .block-danger }
-</code></pre></div></div>
+<p>If I can leave one takeaway for any readers who have come this far, it is that while LLM results are certainly valuable, the generation results of LLMs can be much more valuable when they are evaluated by a rule-based system, as once this is done, it is easier for humans to have trust in such results. This is a theme of much of my subsequent work on LLMs: I argued this point in my <a href="/al-folio/publications/#Kang2023lg">GI workshop position paper</a>, and explicitly made this a central theme of my <a href="/al-folio/publications/#kang2023explainable">Automatic Scientific Debugging</a>.</p>
 
-<blockquote class="block-danger">
-  <h5 id="danger">DANGER</h5>
+<h3 id="footnotes">Footnotes</h3>
 
-  <p>This is a danger zone, and thus should
-be used carefully</p>
-</blockquote>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>In <a href="https://dl.acm.org/doi/10.1145/2931037.2931051" rel="external nofollow noopener" target="_blank">prior work</a> on fault localization, most developers reported that they would be satisfied with an FL tool with an accuracy of ca. 90%, so it is feasible that developers would be satisfied with the precision of <code class="language-plaintext highlighter-rouge">LIBRO</code>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
 
     </div>
-  </article>
-
-
-<div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
+  </article><div id="giscus_thread" style="max-width: 800px; margin: 0 auto;">
   <script>
     let giscusTheme = localStorage.getItem("theme");
     let giscusAttributes = {
