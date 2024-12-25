@@ -7,26 +7,84 @@ nav: true
 nav_order: 5
 ---
 
-## Giving Lectures
+## Theses
+---
 
-While Ph.D. students usually don't teach students in Korea,
-I was able to substitute for my PI on short notice
-while he was away due to health issues.
+If you are a computer science student at _Humboldt-Universität Zu Berlin_ and you have fun with automated program testing, fuzzing, and debugging, you should do a bachelor's or master's thesis with me. If you are interested, please send me (or _career-se.informatik@lists.hu-berlin.de_) **a letter of motivation and your most recent transcript of records.**
 
-Specifically, I've given substitute lectures (in English) on:
+💡 **Please note** that due to an update to our mailing server, the new email address for SE career-related inquiries is now **career-se.informatik@lists.hu-berlin.de**!
+{: .notice--warning}
 
- * Testing for deep neural networks
- * Intellectual Property
- * Anonymity and Security on Computing
+### Ongoing Theses
+--- 
 
-## Teaching Assistant
+[Bachelor]<br />
+**Enhancing Automated Program Repair with Additional Test Case Generation**<br />
+<em><ins>Marwin Linke</ins></em><br />
 
-I've participated as a teaching assistant in multiple courses, and
-received an Excellent Teaching Assistant Award. As part of my
-experience as a TA, I have experience with designing assignments and mentoring
-for students.
+[Bachelor]<br />
+**Is Automatic Program Repair in Python possible? - Evaluating Automatic Program Repair Approaches**<br />
+<em><ins>Kai Werk</ins></em><br />
 
-## Supervising Research
+[Bachelor]<br />
+**When Does This Line Get Triggered? Explainable Line Reachability Using Semantic Constraints**<br />
+<em><ins>Angelina Teodoridis</ins></em><br />
 
-I have experience on conducting research with undergraduate
-students (specifically, in my [ISSTA'23 paper](https://arxiv.org/abs/2212.13773) and [ICST'24 paper](https://arxiv.org/abs/2310.13229)). I find working with other students to do good research one of the more rewarding parts of being in academia.
+[Master]<br />
+**Identifying Distinctive Program Inputs in High Dimensional Mixed-Feature Spaces**<br />
+<em><ins>Konstantin Böttcher</ins></em><br />
+
+### Supervised Theses
+--- 
+
+[Master]<br />
+**Exploring Explanation Strategies: A User Study on Automated Debugging Tools**<br />
+<em><ins>Christopher Lazik</ins> - (now: PhD Student @ Humboldt-Universität zu Berlin)</em><br />
+
+[Master]<br />
+**Explaining Mispredictions of Machine Learning Models with Influential Input Features**<br />
+<em><ins>Dennis Buchwinkler</ins></em><br />
+[[Repository](https://github.com/buchwind/misprediction_explanation/)]<br />
+
+[Bachelor]<br />
+**Detecting Non-Functional Behavior with Evoulationary Grammar-Based Fuzzing**<br />
+<em><ins>Gergö Miklovics</ins></em><br />
+
+[Bachelor]<br />
+**Explaining Pathological Behaviour of Self-Adaptive Systems**<br />
+<em><ins>Tobias Kiecker</ins> - (now: PhD Student @ Humboldt-Universität zu Berlin)</em><br />
+
+
+## Summer 2024
+---
+
+[Guest Lecture & Exercise]<br/>
+**Software Engineering II**<br/>
+<em>Lecture, Summer 2024, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
+**Lecture:** <em>Grammar Based Fuzzing + Explanation of Bugs I & II</em><br/>
+[[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ss2024/se2)]<br />
+
+
+## Summer 2023
+---
+
+[Project]<br />
+**Machine Learning for Debugging**<br />
+<em>Semester Project, Summer 2023, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
+[[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ss2023/sp_mlmgd/sp_assv)]<br />
+
+
+[Guest Lecture & Exercise]<br/>
+**Software Engineering II**<br/>
+<em>Lecture, Summer 2023, Bachelor Studies, Humboldt-Universität zu Berlin</em><br />
+**Lecture:** <em>Grammar Based Fuzzing + Explanation of Bugs I & II</em><br/>
+[[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ss2023/se2)]<br />
+
+
+## Winter 2021/2022
+---
+
+[Seminar]<br />
+**Automated Software Engineering**<br />
+<em>Seminar, Winter 2021, Master Studies, Humboldt-Universität zu Berlin</em><br />
+[[Website](https://www.informatik.hu-berlin.de/de/forschung/gebiete/se/teaching/ws2021/ase)]<br />
