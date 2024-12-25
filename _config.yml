@@ -266,8 +266,8 @@ display_tags: #['formatting', 'images', 'links', 'math', 'code'] # these tags wi
 
 scholar:
 
-  last_name: [Kang]
-  first_name: [Sungmin, S.]
+  last_name: [Eberlein]
+  first_name: [Martin, M.]
 
   style: apa
   locale: en
