@@ -1,3 +1,71 @@
+@inproceedings{10.1145/3691620.3695347,
+  author = {Smytzek, Marius and Eberlein, Martin and Werk, Kai and Grunske, Lars and Zeller, Andreas},
+  title = {FixKit: A Program Repair Collection for Python},
+  year = {2024},
+  abstract = {In recent years, automatic program repair has gained much attention in the research community. Generally, program repair approaches consider a faulty program and a test suite that captures the program's intended behavior. The goal is automatically generating a patch that corrects the fault by identifying the faulty code locations, suggesting a candidate fix, and validating it against the provided tests. However, most existing program repair tools focus on Java or C programs, while Python, one of the most popular programming languages, lacks approaches that work on it.We present FixKit, a collection of five program repair approaches for Python programs. Moreover, our framework allows for easy integration of new repair approaches and swapping individual components, such as fault localization. Our framework enables researchers to compare and investigate various repair, fault localization effortlessly, and validation approaches on a common set of techniques.},
+  booktitle = {Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+  series = {ASE '24},
+  bibtex_show={true},
+  preview={doctest_thumbnail.png},
+}
+
+
+@inproceedings{DBLP:conf/sigsoft/SmytzekESGZ24,
+  bibtex_show={true},
+  author       = {Marius Smytzek and
+                  Martin Eberlein and
+                  Batuhan Serce and
+                  Lars Grunske and
+                  Andreas Zeller},
+  title        = {Tests4Py: {A} Benchmark for System Testing},
+  booktitle    = {Companion Proceedings of the 32nd {ACM} International Conference on
+                  the Foundations of Software Engineering, {FSE} 2024, Porto de Galinhas,
+                  Brazil, July 15-19, 2024},
+  year         = {2024},
+  preview={doctest_thumbnail.png},
+}
+
+@inproceedings{DBLP:conf/se/EberleinSSGZ24,
+  bibtex_show={true},
+  author       = {Martin Eberlein and
+                  Marius Smytzek and
+                  Dominic Steinh{\"{o}}fel and
+                  Lars Grunske and
+                  Andreas Zeller},
+  title        = {Semantic Debugging},
+  booktitle    = {Software Engineering 2024, Fachtagung des GI-Fachbereichs Softwaretechnik,
+                  Linz, Austria, February 26 - March 1, 2024},
+  year         = {2024},
+  preview={doctest_thumbnail.png},
+}
+
+
+@inproceedings{DBLP:conf/sigsoft/EberleinSSGZ23,
+  bibtex_show={true},
+  selected={true},
+  author       = {Martin Eberlein and
+                  Marius Smytzek and
+                  Dominic Steinh{\"{o}}fel and
+                  Lars Grunske and
+                  Andreas Zeller},
+  title        = {Semantic Debugging},
+  booktitle    = {Proceedings of the 31st {ACM} Joint European Software Engineering
+                  Conference and Symposium on the Foundations of Software Engineering,
+                  {ESEC/FSE} 2023, San Francisco, CA, USA, December 3-9, 2023},
+  year         = {2023},
+  preview={doctest_thumbnail.png},
+}
+
+@inproceedings{DBLP:conf/sigsoft/Eberlein22,
+  bibtex_show={true},
+  author       = {Martin Eberlein},
+  title        = {Explaining and debugging pathological program behavior},
+  booktitle    = {Proceedings of the 30th {ACM} Joint European Software Engineering
+                  Conference and Symposium on the Foundations of Software Engineering,
+                  {ESEC/FSE} 2022, Singapore, Singapore, November 14-18, 2022},
+  year={2022},
+  preview={installamatic_thumbnail.png},
+}
 
 @inproceedings{DBLP:conf/ssbse/EberleinN0G20,
   bibtex_show={true},
@@ -11,187 +79,3 @@
   preview={installamatic_thumbnail.png},
   abstract = {Many works have recently proposed the use of Large Language Model (LLM) based agents for performing 'repository level' tasks, loosely defined as a set of tasks whose scopes are greater than a single file. This has led to speculation that the orchestration of these repository-level tasks could lead to software engineering agents capable of performing almost independently of human intervention. However, of the suite of tasks that would need to be performed by this autonomous software engineering agent, we argue that one important task is missing, which is to fulfil project level dependency by installing other repositories. To investigate the feasibility of this repository level installation task, we introduce a benchmark of of repository installation tasks curated from 40 open source Python projects, which includes a ground truth installation process for each target repository. Further, we propose INSTALLAMATIC, an agent whose goal is to perform and verify the installation of a given repository by searching for relevant instructions from documentations in the repository. We evaluate our agent using this benchmark, and report that 55% of the studied repositories can be automatically installed by our agent. Through the results of our empirical evaluation, we identify the common causes for our agent's inability to install a repository, discuss the challenges faced in the design and implementation of such an agent and consider the implications that such an agent could have for developers.},
 }
-
-
-
-
-
-
-
-
-@inproceedings{milliken2025installamatic,
-  bibtex_show={true},
-      title={Beyond pip install: Evaluating LLM Agents for the Automated Installation of Python Projects}, 
-      author={Louis Milliken and Sungmin Kang and Shin Yoo},
-      year={2025},
-  booktitle = {2025 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  preview={installamatic_thumbnail.png},
-  abstract = {Many works have recently proposed the use of Large Language Model (LLM) based agents for performing 'repository level' tasks, loosely defined as a set of tasks whose scopes are greater than a single file. This has led to speculation that the orchestration of these repository-level tasks could lead to software engineering agents capable of performing almost independently of human intervention. However, of the suite of tasks that would need to be performed by this autonomous software engineering agent, we argue that one important task is missing, which is to fulfil project level dependency by installing other repositories. To investigate the feasibility of this repository level installation task, we introduce a benchmark of of repository installation tasks curated from 40 open source Python projects, which includes a ground truth installation process for each target repository. Further, we propose INSTALLAMATIC, an agent whose goal is to perform and verify the installation of a given repository by searching for relevant instructions from documentations in the repository. We evaluate our agent using this benchmark, and report that 55% of the studied repositories can be automatically installed by our agent. Through the results of our empirical evaluation, we identify the common causes for our agent's inability to install a repository, discuss the challenges faced in the design and implementation of such an agent and consider the implications that such an agent could have for developers.},
-}
-
-@misc{kang2024doctesting,
-  bibtex_show={true},
-      title={Identifying Inaccurate Descriptions in LLM-generated Code Comments via Test Execution}, 
-      author={Sungmin Kang and Louis Milliken and Shin Yoo},
-      year={2024},
-      eprint={2406.14836},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-    preview={doctest_thumbnail.png},
-	  pdf={https://arxiv.org/pdf/2406.14836.pdf},
-	  abstract = {Software comments are critical for human understanding of software, and as such many comment generation techniques have been proposed. However, we find that a systematic evaluation of the factual accuracy of generated comments is rare; only subjective accuracy labels have been given. Evaluating comments generated by three Large Language Models (LLMs), we find that even for the best-performing LLM, roughly a fifth of its comments contained demonstrably inaccurate statements. While it seems code-comment consistency detection techniques should be able to detect inaccurate comments, we perform experiments demonstrating they have no statistically significant relationship with comment accuracy, underscoring the substantial difficulty of this problem. To tackle this, we propose the concept of document testing, in which a document is verified by using an LLM to generate tests based on the document, running those tests, and observing whether they pass or fail. Furthermore, we implement our concept to verify Java comments. Experiments demonstrate that our approach has a robust statistical relationship with comment accuracy, making headway into a problem where prior techniques failed. Qualitative evaluation also reveals the promise of our approach in gaining developer trust, while highlighting the limitations of our current implementation.},
-}
-
-@article{kang2024autofl,
-  bibtex_show={true},
-  selected={true},
-  title={A Quantitative and Qualitative Evaluation of LLM-based Explainable Fault Localization},
-  journal = {Proceedings of the ACM on Software Engineering},
-  number = {FSE}, 
-  pages = {1424-1446},
-  volume = {1},
-  issue = {FSE},
-  author={Sungmin Kang and Gabin An and Shin Yoo},
-  year={2024},
-  preview={autofl_thumbnail.png},
-  code={https://github.com/coinse/autofl},
-  pdf={https://arxiv.org/pdf/2308.05487.pdf},
-  slides={AutoFLFSE_240717.pdf},
-  abstract={Fault Localization (FL), in which a developer seeks to identify which part of the code is malfunctioning and needs to be fixed, is a recurring challenge in debugging. To reduce developer burden, many automated FL techniques have been proposed. However, prior work has noted that existing techniques fail to provide rationales for the suggested locations, hindering developer adoption of these techniques. With this in mind, we propose AutoFL, a Large Language Model (LLM)-based FL technique that generates an explanation of the bug along with a suggested fault location. AutoFL prompts an LLM to use function calls to navigate a repository, so that it can effectively localize faults over a large software repository and overcome the limit of the LLM context length. Extensive experiments on 798 real-world bugs in Java and Python reveal AutoFL improves method-level acc@1 by up to 233.3% over baselines. Furthermore, developers were interviewed on their impression of AutoFL-generated explanations, showing that developers generally liked the natural language explanations of AutoFL, and that they preferred reading a few, high-quality explanations instead of many.},
-}
-
-@article{kang2023deceiving,
-  bibtex_show={true},
-  title={Deceiving Humans and Machines Alike: Search-based Test Input Generation for DNNs using Variational Autoencoders},
-  author={Kang, Sungmin and Feldt, Robert and Yoo, Shin},
-  journal={ACM Transactions on Software Engineering and Methodology},
-  year={2023},
-  publisher={ACM New York, NY},
-  pdf={https://dl.acm.org/doi/pdf/10.1145/3635706},
-  preview={sinvad_thumbnail.png},
-  abstract={Due to the rapid adoption of Deep Neural Networks (DNNs) into larger software systems, testing of DNN based systems has received much attention recently. While many different test adequacy criteria have been suggested, we lack effective test input generation techniques. Inputs such as images of real world objects and scenes are not only expensive to collect but also difficult to randomly sample. Consequently, current testing techniques for DNNs tend to apply small local perturbations to existing inputs to generate new inputs. We propose SINVAD, a way to sample from, and navigate over, a space of realistic inputs that resembles the true distribution in the training data. Our input space is constructed using Variational AutoEncoders (VAEs), and navigated through their latent vector space. Our analysis shows that the VAE-based input space is well-aligned with human perception of what constitutes realistic inputs. Further, we show that this space can be effectively searched to achieve various testing scenarios, such as boundary testing of two different DNNs or analyzing class labels that are difficult for the given DNN to distinguish. Guidelines on how to design VAE architectures are presented as well. Our results have the potential to open the field to meaningful exploration through the space of highly structured images.}
-}
-
-@article{kang2024evaluating,
-  bibtex_show={true},
-      title={Evaluating Diverse Large Language Models for Automatic and General Bug Reproduction}, 
-      author={Sungmin Kang and Juyeon Yoon and Nargiz Askarbekkyzy and Shin Yoo},
-      year={2024},
-      journal = {{IEEE} {T}ransactions on {S}oftware {E}ngineering},
-    preview={libro_extension_thumbnail.png},
-	  abstract={Bug reproduction is a critical developer activity that is also challenging to automate, as bug reports are often in natural language and thus can be difficult to transform to test cases consistently. As a result, existing techniques mostly focused on crash bugs, which are easier to automatically detect and verify. In this work, we overcome this limitation by using large language models (LLMs), which have been demonstrated to be adept at natural language processing and code generation. By prompting LLMs to generate bug-reproducing tests, and via a post-processing pipeline to automatically identify promising generated tests, our proposed technique LIBRO could successfully reproduce about one-third of all bugs in the widely used Defects4J benchmark. Furthermore, our extensive evaluation on 15 LLMs, including 11 open-source LLMs, suggests that open-source LLMs also demonstrate substantial potential, with the StarCoder LLM achieving 70% of the reproduction performance of the closed-source OpenAI LLM code-davinci-002 on the large Defects4J benchmark, and 90% of performance on a held-out bug dataset likely not part of any LLM's training data. In addition, our experiments on LLMs of different sizes show that bug reproduction using LIBRO improves as LLM size increases, providing information as to which LLMs can be used with the LIBRO pipeline.},
-	  pdf={https://arxiv.org/pdf/2311.04532.pdf},
-	  code={https://github.com/coinse/libro-journal-artifact},
-}
-
-@misc{lee2023github,
-  bibtex_show={true},
-      title={The GitHub Recent Bugs Dataset for Evaluating LLM-based Debugging Applications}, 
-      author={Jae Yong Lee and Sungmin Kang and Juyeon Yoon and Shin Yoo},
-      booktitle={2024 IEEE Conference on Software Testing, Verification and Validation Demo Track (ICST)},
-	  series={ICST 2024},
-	  year={2024},
-	  abstract={Large Language Models (LLMs) have demonstrated strong natural language processing and code synthesis capabilities, which has led to their rapid adoption in software engineering applications. However, details about LLM training data are often not made public, which has caused concern as to whether existing bug benchmarks are included. In lieu of the training data for the popular GPT models, we examine the training data of the open-source LLM StarCoder, and find it likely that data from the widely used Defects4J benchmark was included, raising the possibility of its inclusion in GPT training data as well. This makes it difficult to tell how well LLM-based results on Defects4J would generalize, as for any results it would be unclear whether a technique's performance is due to LLM generalization or memorization. To remedy this issue and facilitate continued research on LLM-based SE, we present the GitHub Recent Bugs (GHRB) dataset, which includes 76 real-world Java bugs that were gathered after the OpenAI data cut-off point.},
-	  pdf={https://arxiv.org/pdf/2310.13229.pdf},
-	  code={https://github.com/coinse/GHRB},
-}
-
-@inproceedings{feldt2023autonomous,
-  bibtex_show={true},
-      title={Towards Autonomous Testing Agents via Conversational Large Language Models}, 
-      author={Robert Feldt and Sungmin Kang and Juyeon Yoon and Shin Yoo},
-	  booktitle = {Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
-	  preview={testagent_thumbnail.png},
-	  series={ASE 2023},
-      year={2023},
-	  abstract={Software testing is an important part of the development cycle, yet it requires specialized expertise and substantial developer effort to adequately test software. The recent discoveries of the capabilities of large language models (LLMs) suggest that they can be used as automated testing assistants, and thus provide helpful information and even drive the testing process. To highlight the potential of this technology, we present a taxonomy of LLM-based testing agents based on their level of autonomy, and describe how a greater level of autonomy can benefit developers in practice. An example use of LLMs as a testing assistant is provided to demonstrate how a conversational framework for testing can help developers. This also highlights how the often criticized hallucination of LLMs can be beneficial while testing. We identify other tangible benefits that LLM-driven testing agents can bestow, and also discuss some potential limitations.},
-	  pdf={https://arxiv.org/pdf/2306.05152.pdf},
-}
-
-@misc{kang2023explainable,
-  bibtex_show={true},
-  preview={autosd_thumbnail.png},
-      title={Explainable Automated Debugging via Large Language Model-driven Scientific Debugging}, 
-      author={Sungmin Kang and Bei Chen and Shin Yoo and Jian-Guang Lou},
-      year={2023},
-      eprint={2304.02195},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-	  abstract={Automated debugging techniques have the potential to reduce developer effort in debugging, and have matured enough to be adopted by industry. However, one critical issue with existing techniques is that, while developers want rationales for the provided automatic debugging results, existing techniques are ill-suited to provide them, as their deduction process differs significantly from that of human developers. Inspired by the way developers interact with code when debugging, we propose Automated Scientific Debugging (AutoSD), a technique that given buggy code and a bug-revealing test, prompts large language models to automatically generate hypotheses, uses debuggers to actively interact with buggy code, and thus automatically reach conclusions prior to patch generation. By aligning the reasoning of automated debugging more closely with that of human developers, we aim to produce intelligible explanations of how a specific patch has been generated, with the hope that the explanation will lead to more efficient and accurate developer decisions. Our empirical analysis on three program repair benchmarks shows that AutoSD performs competitively with other program repair baselines, and that it can indicate when it is confident in its results. Furthermore, we perform a human study with 20 participants, including six professional developers, to evaluate the utility of explanations from AutoSD. Participants with access to explanations could judge patch correctness in roughly the same time as those without, but their accuracy improved for five out of six real-world bugs studied: 70% of participants answered that they wanted explanations when using repair tools, while 55% answered that they were satisfied with the Scientific Debugging presentation.},
-      pdf={https://arxiv.org/pdf/2304.02195.pdf},
-}
-
-@inproceedings{Kang2023bb,
-  bibtex_show={true},
-  selected={true},
-  preview={bapp_thumbnail.png},
-	author = {Kang, Sungmin and Choi, Wonkeun and Yoo, Shin},
-	booktitle = {Proceedings of the 32nd International Symposium on Software Testing and Analysis},
-	series = {ISSTA 2023},
-	title = {A Bayesian Framework for Automated Debugging},
-  abstract = {Debugging takes up a significant portion of developer time. As a result, 
-automated debugging techniques including Fault Localization (FL) and Automated 
-Program Repair (APR) have garnered significant attention due to their potential 
-to aid developers in debugging tasks. With the recent advance in techniques that treat the two tasks as closely coupled, such as Unified Debugging, a framework to formally express these two tasks together would heighten our understanding of automated debugging 
-and provide a way to formally analyze techniques and approaches. To this end, 
-we propose a Bayesian framework of understanding automated debugging. We 
-find that the Bayesian framework, along with a concrete statement of the objective of 
-automated debugging, can recover maximal fault localization formulae from 
-prior work, as well as analyze existing APR techniques and their underlying 
-assumptions.
-As a means of empirically demonstrating our framework, we further propose 
-BAPP, a Bayesian Patch Prioritization technique that incorporates intermediate program values 
-to analyze likely patch locations and repair actions, with its core equations 
-being derived by our Bayesian framework. We find that incorporating program 
-values allows BAPP to identify correct patches more precisely: 
-the rankings produced by BAPP reduced the number of
-required patch evaluations by 68% and consequently reduced the repair 
-time by 34 minutes on average. Further, our Bayesian framework suggests a number of
-changes to the way fault localization information is used in program repair,
-which we validate is useful for BAPP.
-These results highlight the potential of value-cognizant automated debugging 
-techniques, and further verifies our theoretical framework.},
-	year = {2023},
-	slides={BAPPISSTA_230718.pdf},
-	pdf={https://arxiv.org/pdf/2212.13773.pdf},}
-
-@inproceedings{Kang2023lg,
-  bibtex_show={true},
-	author = {Sungmin Kang and Shin Yoo},
-	booktitle = {Proceedings of the 12th International Workshop on Genetic Improvement},
-	series = {GI 2023},
-	title = {Towards Objective-Tailored Genetic Improvement Through Large Language Models},
-  preview={brownian-motion.gif},
-	year = {2023},
-	pdf={https://arxiv.org/pdf/2304.09386.pdf},
-	abstract = {While Genetic Improvement (GI) is a useful paradigm to improve functional and nonfunctional aspects of software, existing techniques tended to use the same set of mutation operators for differing objectives, due to the difficulty of writing custom mutation operators. In this work, we suggest that Large Language Models (LLMs) can be used to generate objective-tailored mutants, expanding the possibilities of software optimizations that GI can perform. We further argue that LLMs and the GI process can benefit from the strengths of one another, and present a simple example demonstrating that LLMs can both improve the effectiveness of the GI optimization process, while also benefiting from the evaluation steps of GI. As a result, we believe that the combination of LLMs and GI has the capability to significantly aid developers in optimizing their software.},}
-
-@inproceedings{Kang2023aa,
-  bibtex_show={true},
-  selected={true},
-  preview={libro_thumbnail.png},
-	author = {Sungmin Kang and Juyeon Yoon and Shin Yoo},
-	booktitle = {Proceedings of the 45th IEEE/ACM International Conference on Software Engineering},
-	series = {ICSE 2023},
-	title = {Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction},
-  blog = {/al-folio/blog/2023/libro-explained},
-  code = {https://github.com/coinse/libro},
-  slides = {LibroICSE_230519.pdf},
-    pdf={https://arxiv.org/pdf/2209.11515.pdf},
-	abstract={Many automated test generation techniques have been developed to aid developers with writing tests. To facilitate full automation, most existing techniques aim to either increase coverage, or generate exploratory inputs. However, existing test generation techniques largely fall short of achieving more semantic objectives, such as generating tests to reproduce a given bug report. Reproducing bugs is nonetheless important, as our empirical study shows that the number of tests added in open source repositories due to issues was about 28% of the corresponding project test suite size. Meanwhile, due to the difficulties of transforming the expected program semantics in bug reports into test oracles, existing failure reproduction techniques tend to deal exclusively with program crashes, a small subset of all bug reports. To automate test generation from general bug reports, we propose LIBRO, a framework that uses Large Language Models (LLMs), which have been shown to be capable of performing code-related tasks. Since LLMs themselves cannot execute the target buggy code, we focus on post-processing steps that help us discern when LLMs are effective, and rank the produced tests according to their validity. Our evaluation of LIBRO shows that, on the widely studied Defects4J benchmark, LIBRO can generate failure reproducing test cases for 33% of all studied cases (251 out of 750), while suggesting a bug reproducing test in first place for 149 bugs. To mitigate data contamination, we also evaluate LIBRO against 31 bug reports submitted after the collection of the LLM training data terminated: LIBRO produces bug reproducing tests for 32% of the studied bug reports. Overall, our results show LIBRO has the potential to significantly enhance developer efficiency by automatically generating tests from bug reports.},
-  
-	year = {2023}}
-
-@article{Sohn2022cr,
-  bibtex_show={true},
-  preview={arachne_thumbnail.png},
-	author = {Jeongju Sohn and Sungmin Kang and Shin Yoo},
-	date-modified = {2023-05-29 12:26:00 +0900},
-	journal = {{ACM} {T}ransactions on {S}oftware {E}ngineering {M}ethodology},
-	number = {4},
-	pages = {1--26},
-	title = {Arachne: Search Based Repair of Deep Neural Networks},
-	volume = {32},
-	year = {2023},
-	pdf = {https://arxiv.org/pdf/1912.12463.pdf},
-	abstract = {The rapid and widespread adoption of Deep Neural Networks (DNNs) has called for ways to test their behaviour, and many testing approaches have successfully revealed misbehaviour of DNNs. However, it is relatively unclear what one can do to correct such behaviour after revelation, as retraining involves costly data collection and does not guarantee to fix the underlying issue. This article introduces Arachne, a novel program repair technique for DNNs, which directly repairs DNNs using their input-output pairs as a specification. Arachne localises neural weights on which it can generate effective patches and uses differential evolution to optimise the localised weights and correct the misbehaviour. An empirical study using different benchmarks shows that Arachne can fix specific misclassifications of a DNN without reducing general accuracy significantly. On average, patches generated by Arachne generalise to 61.3% of unseen misbehaviour, whereas those by a state-of-the-art DNN repair technique generalise only to 10.2% and sometimes to none while taking tens of times more than Arachne. We also show that Arachne can address fairness issues by debiasing a gender classification model. Finally, we successfully apply Arachne to a text sentiment model to show that it generalises beyond convolutional neural networks.},}
