@@ -197,8 +197,7 @@ In particular, I am working in the following areas:</p>
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
-            <ol class="bibliography">
-<li>
+            <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 preview">
@@ -206,13 +205,13 @@ In particular, I am working in the following areas:</p>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/autofl_thumbnail-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/autofl_thumbnail-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/autofl_thumbnail-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/doctest_thumbnail-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/doctest_thumbnail-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/doctest_thumbnail-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/autofl_thumbnail.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="autofl_thumbnail.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/publication_preview/doctest_thumbnail.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="doctest_thumbnail.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -220,21 +219,35 @@ In particular, I am working in the following areas:</p>
 </div>
 
         <!-- Entry bib key -->
-        <div id="kang2024autofl" class="col-sm-8">
+        <div id="DBLP:conf/sigsoft/EberleinSSGZ23" class="col-sm-8">
         <!-- Title -->
-        <div class="title">A Quantitative and Qualitative Evaluation of LLM-based Explainable Fault Localization</div>
+        <div class="title">Semantic Debugging</div>
         <!-- Author -->
         <div class="author">
         
 
-        <em>Sungmin Kang</em>, <a href="https://agb94.github.io/" rel="external nofollow noopener" target="_blank">Gabin An</a>, and <a href="https://coinse.github.io/members/shin.yoo/" rel="external nofollow noopener" target="_blank">Shin Yoo</a>
+        Martin Eberlein, Marius Smytzek, Dominic Steinhöfel, and
+          <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Lars Grunske, Andreas Zeller' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
         
         
         <div class="periodical">
-          <em>Proceedings of the ACM on Software Engineering</em>, 2024
+          <em>In Proceedings of the 31st ACM Joint European Software Engineering
+                  Conference and Symposium on the Foundations of Software Engineering,
+                  ESEC/FSE 2023, San Francisco, CA, USA, December 3-9, 2023</em>, 2023
         </div>
         <div class="periodical">
           
@@ -242,11 +255,7 @@ In particular, I am working in the following areas:</p>
 
           <!-- Links/Buttons -->
           <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://arxiv.org/pdf/2308.05487.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <a href="https://github.com/coinse/autofl" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-            <a href="/assets/pdf/AutoFLFSE_240717.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
           </div>
           
           <div class="badges">
@@ -254,194 +263,20 @@ In particular, I am working in the following areas:</p>
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Fault Localization (FL), in which a developer seeks to identify which part of the code is malfunctioning and needs to be fixed, is a recurring challenge in debugging. To reduce developer burden, many automated FL techniques have been proposed. However, prior work has noted that existing techniques fail to provide rationales for the suggested locations, hindering developer adoption of these techniques. With this in mind, we propose AutoFL, a Large Language Model (LLM)-based FL technique that generates an explanation of the bug along with a suggested fault location. AutoFL prompts an LLM to use function calls to navigate a repository, so that it can effectively localize faults over a large software repository and overcome the limit of the LLM context length. Extensive experiments on 798 real-world bugs in Java and Python reveal AutoFL improves method-level acc@1 by up to 233.3% over baselines. Furthermore, developers were interviewed on their impression of AutoFL-generated explanations, showing that developers generally liked the natural language explanations of AutoFL, and that they preferred reading a few, high-quality explanations instead of many.</p>
-          </div>
-<!-- Hidden bibtex block -->
+          <!-- Hidden bibtex block -->
           <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">kang2024autofl</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Quantitative and Qualitative Evaluation of LLM-based Explainable Fault Localization}</span><span class="p">,</span>
-  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM on Software Engineering}</span><span class="p">,</span>
-  <span class="na">number</span> <span class="p">=</span> <span class="s">{FSE}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1424-1446}</span><span class="p">,</span>
-  <span class="na">volume</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
-  <span class="na">issue</span> <span class="p">=</span> <span class="s">{FSE}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kang, Sungmin and An, Gabin and Yoo, Shin}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/bapp_thumbnail-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/bapp_thumbnail-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/bapp_thumbnail-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/bapp_thumbnail.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="bapp_thumbnail.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="Kang2023bb" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">A Bayesian Framework for Automated Debugging</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Sungmin Kang</em>, Wonkeun Choi, and <a href="https://coinse.github.io/members/shin.yoo/" rel="external nofollow noopener" target="_blank">Shin Yoo</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the 32nd International Symposium on Software Testing and Analysis</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://arxiv.org/pdf/2212.13773.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <a href="/assets/pdf/BAPPISSTA_230718.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Debugging takes up a significant portion of developer time. As a result, 
-automated debugging techniques including Fault Localization (FL) and Automated 
-Program Repair (APR) have garnered significant attention due to their potential 
-to aid developers in debugging tasks. With the recent advance in techniques that treat the two tasks as closely coupled, such as Unified Debugging, a framework to formally express these two tasks together would heighten our understanding of automated debugging 
-and provide a way to formally analyze techniques and approaches. To this end, 
-we propose a Bayesian framework of understanding automated debugging. We 
-find that the Bayesian framework, along with a concrete statement of the objective of 
-automated debugging, can recover maximal fault localization formulae from 
-prior work, as well as analyze existing APR techniques and their underlying 
-assumptions.
-As a means of empirically demonstrating our framework, we further propose 
-BAPP, a Bayesian Patch Prioritization technique that incorporates intermediate program values 
-to analyze likely patch locations and repair actions, with its core equations 
-being derived by our Bayesian framework. We find that incorporating program 
-values allows BAPP to identify correct patches more precisely: 
-the rankings produced by BAPP reduced the number of
-required patch evaluations by 68% and consequently reduced the repair 
-time by 34 minutes on average. Further, our Bayesian framework suggests a number of
-changes to the way fault localization information is used in program repair,
-which we validate is useful for BAPP.
-These results highlight the potential of value-cognizant automated debugging 
-techniques, and further verifies our theoretical framework.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Kang2023bb</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kang, Sungmin and Choi, Wonkeun and Yoo, Shin}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 32nd International Symposium on Software Testing and Analysis}</span><span class="p">,</span>
-  <span class="na">series</span> <span class="p">=</span> <span class="s">{ISSTA 2023}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Bayesian Framework for Automated Debugging}</span><span class="p">,</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">DBLP:conf/sigsoft/EberleinSSGZ23</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Eberlein, Martin and Smytzek, Marius and Steinh{\"{o}}fel, Dominic and Grunske, Lars and Zeller, Andreas}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Semantic Debugging}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 31st {ACM} Joint European Software Engineering
+                    Conference and Symposium on the Foundations of Software Engineering,
+                    {ESEC/FSE} 2023, San Francisco, CA, USA, December 3-9, 2023}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
       </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/libro_thumbnail-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/libro_thumbnail-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/libro_thumbnail-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/publication_preview/libro_thumbnail.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="libro_thumbnail.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="Kang2023aa" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Sungmin Kang</em>, <a href="https://coinse.github.io/members/juyeon/" rel="external nofollow noopener" target="_blank">Juyeon Yoon</a>, and <a href="https://coinse.github.io/members/shin.yoo/" rel="external nofollow noopener" target="_blank">Shin Yoo</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In Proceedings of the 45th IEEE/ACM International Conference on Software Engineering</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="https://arxiv.org/pdf/2209.11515.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
-            <a href="/al-folio/blog/2023/libro-explained" class="btn btn-sm z-depth-0" role="button">Blog</a>
-            <a href="https://github.com/coinse/libro" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-            <a href="/assets/pdf/LibroICSE_230519.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Many automated test generation techniques have been developed to aid developers with writing tests. To facilitate full automation, most existing techniques aim to either increase coverage, or generate exploratory inputs. However, existing test generation techniques largely fall short of achieving more semantic objectives, such as generating tests to reproduce a given bug report. Reproducing bugs is nonetheless important, as our empirical study shows that the number of tests added in open source repositories due to issues was about 28% of the corresponding project test suite size. Meanwhile, due to the difficulties of transforming the expected program semantics in bug reports into test oracles, existing failure reproduction techniques tend to deal exclusively with program crashes, a small subset of all bug reports. To automate test generation from general bug reports, we propose LIBRO, a framework that uses Large Language Models (LLMs), which have been shown to be capable of performing code-related tasks. Since LLMs themselves cannot execute the target buggy code, we focus on post-processing steps that help us discern when LLMs are effective, and rank the produced tests according to their validity. Our evaluation of LIBRO shows that, on the widely studied Defects4J benchmark, LIBRO can generate failure reproducing test cases for 33% of all studied cases (251 out of 750), while suggesting a bug reproducing test in first place for 149 bugs. To mitigate data contamination, we also evaluate LIBRO against 31 bug reports submitted after the collection of the LLM training data terminated: LIBRO produces bug reproducing tests for 32% of the studied bug reports. Overall, our results show LIBRO has the potential to significantly enhance developer efficiency by automatically generating tests from bug reports.</p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Kang2023aa</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Kang, Sungmin and Yoon, Juyeon and Yoo, Shin}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 45th IEEE/ACM International Conference on Software Engineering}</span><span class="p">,</span>
-  <span class="na">series</span> <span class="p">=</span> <span class="s">{ICSE 2023}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Large Language Models are Few-shot Testers: Exploring LLM-based General Bug Reproduction}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-</ol>
+</li></ol>
           </div>
 
 
